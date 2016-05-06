@@ -18,6 +18,9 @@ public interface Constants {
 	public static final String PARAM_PACKAGENAME = "pid";
 	public static final String PARAM_ICON = "icon";
 	public static final String PARAM_TITLE = "title";
+	public static final String PARAM_WEB_URL = "web_url";
+	public static final String PARAM_TARGET_URI = "target_uri";
+	public static final String PARAM_INTENT = "shortcut_intent";
 
 	public static final String DATA_TYPE = "type";
 	public static final String DATA_TYPE_ACTIVITIES = "activities";

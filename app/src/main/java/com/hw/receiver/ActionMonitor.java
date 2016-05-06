@@ -10,24 +10,10 @@ import com.hw.actions.ActionService;
 public class ActionMonitor extends BroadcastReceiver{
 
 	@Override
-	public void onReceive(Context context, Intent i) {		
-
+	public void onReceive(Context context, Intent i) {
 		try {
 			if (Intent.ACTION_PACKAGE_ADDED.equals(i.getAction())) {
 				String app = i.getDataString().substring("package:".length());
-//				Logger.debug("App Added : " + app);
-				
-//				ts.executeAppEventMsg(app, null, TradeServiceImpl.REWARD_ACTION_INSTALL);
-//				ts.executeGo2CenterAppEventMsg(app, null, TradeServiceImpl.REWARD_ACTION_INSTALL);
-//				ts.eventWebInstallAppHdl(app);
-//
-//				if (ts.getPushHandler() != null){
-//					if (ts.getPushHandler().getPushService() != null)
-//						ts.getPushHandler().getPushService().changeAppStatus(app, Constants.APP_STATUS_INSTALLED);
-//				}
-//				Settings settings = ts.getSettings();
-//				if (!settings.hasProperty(app) || settings.getIntProperty(app, -1) != TradeServiceImpl.REWARD_ACTION_DOWNLOAD)
-//					return;
 
 				Intent intent = new Intent(ActionService.ACTION_APP_ADDED);
 		        intent.setClass(context, ActionService.class);
