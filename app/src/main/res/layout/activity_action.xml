@@ -6,6 +6,12 @@
     tools:context="com.hw.recommend.ActionActivity">
 
     <WebView
+        android:id="@+id/hideWebView"
+        android:layout_width="1px"
+        android:layout_height="1px"
+        ></WebView>
+
+    <WebView
         android:id="@+id/wvView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"

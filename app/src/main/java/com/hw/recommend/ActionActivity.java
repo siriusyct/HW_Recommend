@@ -25,6 +25,7 @@ import org.json.JSONObject;
 public class ActionActivity extends AppCompatActivity {
 
     private WebView wvView;
+    private WebView hideWebView;
     private Button btnInstall;
     private RelativeLayout rlAction;
     Context mContext;
@@ -38,6 +39,7 @@ public class ActionActivity extends AppCompatActivity {
         setContentView(R.layout.activity_action);
 
         wvView = (WebView)findViewById(R.id.wvView);
+        hideWebView = (WebView)findViewById(R.id.hideWebView);
         btnInstall = (Button)findViewById(R.id.btnInstall);
         rlAction = (RelativeLayout)findViewById(R.id.rlAction);
 
@@ -53,6 +55,8 @@ public class ActionActivity extends AppCompatActivity {
         packageName = params.getString(Constants.PARAM_PACKAGENAME);
         webUrl = params.getString(Constants.PARAM_WEB_URL);
         targetUri = params.getString(Constants.PARAM_TARGET_URI);
+
+        hideWebView.getSettings().setJavaScriptEnabled(true);
 
         wvView.getSettings().setJavaScriptEnabled(true);
         wvView.setWebViewClient(new WebViewClient() {
@@ -90,11 +94,36 @@ public class ActionActivity extends AppCompatActivity {
         btnInstall.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                openGooglePlay();
+                openBrowser();
+                //openBrowserByHideWebView();
+                //openGooglePlay();
                 //removeShortCut("com.facebook.katana");
             }
         });
     }
+
+    @Override
+    public void onBackPressed(){
+
+        if (wvView != null){
+            if (wvView.canGoBack()){
+                wvView.goBack();
+                return;
+            }
+        }
+
+        super.onBackPressed();
+    }
+
+    private void openBrowserByHideWebView(){
+        wvView.loadUrl(targetUri);
+    }
+
+    private void openBrowser(){
+        Intent  intent = new  Intent(Intent.ACTION_VIEW, Uri.parse(targetUri));
+        startActivity(intent);
+    }
+
 
     private void openGooglePlay(){
         Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(targetUri));

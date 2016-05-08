@@ -45,6 +45,8 @@ public class ActionService extends Service{
 				Intent removeIntent =  Intent.parseUri(item.intentURI, 0);
 				HWHelper.uninstallShortcut(hs.getContext(), item.title, removeIntent);
 				//settings.setProperty(item.packageName, null);
+
+				// /Users/jizhai_zl/Documents/Android/sdk/platform-tools/
 			} catch (Exception e){
 
 			}

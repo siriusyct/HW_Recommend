@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/Users/jizhai_zl/Desktop/Github/HW_Recommend/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="5c5699834e9722f1c288fea2de82725d078ba127">
+        <dex dex="/Users/jizhai_zl/Desktop/Github/HW_Recommend/app/build/intermediates/pre-dexed/debug/classes-ddeeabdf73b3bc1f72a1a5765d583f23dfaeb37a.jar" />
+    </item>
+    <item
+        jar="/Users/jizhai_zl/Documents/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/23.1.1/support-annotations-23.1.1.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="8d680ba5a623724d1fb0e81c36a790f023a6cede">
+        <dex dex="/Users/jizhai_zl/Desktop/Github/HW_Recommend/app/build/intermediates/pre-dexed/debug/support-annotations-23.1.1-72445476a10fc0df508924817a7a63e2880033b5.jar" />
+    </item>
+    <item
+        jar="/Users/jizhai_zl/Desktop/Github/HW_Recommend/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.1/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="6cbc7773921fcfedbe55657578f0cbfe614778dc">
+        <dex dex="/Users/jizhai_zl/Desktop/Github/HW_Recommend/app/build/intermediates/pre-dexed/debug/classes-0ea5b4a00adcd7454a6f4d0819dd2649564dff7f.jar" />
+    </item>
+    <item
+        jar="/Users/jizhai_zl/Desktop/Github/HW_Recommend/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.1/jars/libs/internal_impl-23.1.1.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="a4de9c81ae239414e1ed0f86441b02abaf29bca9">
+        <dex dex="/Users/jizhai_zl/Desktop/Github/HW_Recommend/app/build/intermediates/pre-dexed/debug/internal_impl-23.1.1-bdcfc65dd5a78aa2344b649814a54164323c0bc9.jar" />
+    </item>
+
+</items>
